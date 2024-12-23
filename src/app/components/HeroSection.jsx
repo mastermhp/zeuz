@@ -108,7 +108,7 @@ export function HeroSection() {
       <div className="relative container mx-auto px-4">
         {/* Left Badge */}
         <div className="absolute mt-40 mx-14">
-        <AnimatedBadge/>
+          <AnimatedBadge />
         </div>
 
         {/* Main Heading */}
@@ -165,22 +165,23 @@ export function HeroSection() {
 
         {/* Right Badge */}
         <div className="absolute top-80 right-10 mx-14">
-          <div class="relative p-[2px] rounded-full bg-gradient-to-r from-white to-teal-300">
+          <div className="flex items-center gap-3 w-fit px-3 py-[12px] pr-8 rounded-full bg-gradient-to-r from-[#ABEAEA] to-[#FFFFFF] border border-[#ABEAEA] backdrop-blur-[195px]">
+            <div className="bg-white rounded-full p-2 w-10 h-10 flex items-center justify-center">
+            <Image
+                src='/sparkles.png'
+                width={32}
+                height={32}
+                />
+              {/* <Sparkles className="w-6 h-6 text-[#ABEAEA]" /> */}
+            </div>
+            <div className="flex flex-col">
+              <span className="text-base font-medium">Write tests quickly</span>
+              <span className="text-sm text-gray-600">No-Code, AI powered</span>
+            </div>
+          </div>
+          {/* <div class="relative p-[2px] rounded-full bg-gradient-to-r from-white to-teal-300">
             <div className="inline-flex items-center rounded-full bg-gradient-to-r from-teal-300 to-white px-4 py-4">
               <div className="mr-1 rounded-full bg-white p-2">
-                {/* <svg
-                  className="h-4 w-4 text-teal-500"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M5 13l4 4L19 7"
-                  />
-                </svg> */}
                 <Image
                 src='/sparkles.png'
                 width={32}
@@ -194,7 +195,7 @@ export function HeroSection() {
                 </span>
               </span>
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* Stats */}

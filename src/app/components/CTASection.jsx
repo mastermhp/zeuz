@@ -16,22 +16,38 @@
 //     </div>
 //   )
 // }
-
-import { ArrowRight } from 'lucide-react'
+import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 
 export function CTASection() {
   return (
-    <div className="container mx-auto px-4 py-8">
-      <div className="bg-gradient-to-r from-[#B721FF] to-[#7A1BFF] rounded-2xl p-8 flex justify-between items-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-white max-w-xl">
-          Take Advantage of our FREE Demo Today.
-        </h2>
-        <button className="bg-white text-black px-6 py-3 rounded-lg flex items-center gap-2 hover:bg-gray-100 transition-colors">
-          Request Free Demo
-          <ArrowRight className="w-5 h-5" />
-        </button>
+    <div className="container mx-auto px-16 py-8">
+      {/* Relative container for proper background layering */}
+      <div className="relative rounded-2xl overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <Image
+            src="/bg.png" // Replace with your image path
+            alt="Background"
+            fill
+            className="object-cover"
+          />
+        </div>
+
+        {/* Gradient Overlay */}
+        {/* <div className="absolute inset-0 bg-gradient-to-r from-[#B721FF] to-[#7A1BFF] opacity-80"></div> */}
+
+        {/* Content */}
+        <div className="relative z-10 p-8 flex justify-between items-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-white max-w-xl">
+            Take Advantage of our FREE Demo Today.
+          </h2>
+          <button className="bg-white text-black px-6 py-3 rounded-lg flex items-center gap-2 hover:bg-gray-100 transition-colors">
+            Request Free Demo
+            <ArrowRight className="w-5 h-5" />
+          </button>
+        </div>
       </div>
     </div>
-  )
+  );
 }
-

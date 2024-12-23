@@ -32,7 +32,7 @@ export function Footer() {
           {/* Logo and Description */}
           <div className="sm:col-span-2 lg:col-span-3 space-y-6">
             <Image
-              src="/placeholder.svg?height=40&width=120"
+              src="/logoft.png?height=40&width=120"
               alt="ZeuZ Logo"
               width={120}
               height={40}
@@ -122,7 +122,7 @@ export function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-16 pt-8 border-t border-gray-200">
+        <div className="mt-16 pt-8 border-t border-gray-300">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
             <div className="text-gray-600 text-sm">
               © 2025, All Rights Reserved

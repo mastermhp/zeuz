@@ -249,21 +249,21 @@ export function FeaturesSection() {
           </div>
         </div> */}
 
-        <div className="bg-gradient-to-b from-purple-50 to-white py-16 px-4 sm:px-6 lg:px-8">
+        <div className="py-16 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto text-center">
-            <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+            <h2 className="mx-28 text-xl font-bold text-gray-900 sm:text-4xl">
               We Solve Challenges & Complexity in Modern Testing
             </h2>
-            <p className="mt-4 text-lg text-gray-600">
+            <p className="mt-4 mx-28 text-xl text-gray-500">
               ZeuZ provides innovative solutions that use Machine Learning and
               Artificial Intelligence to streamline complex workflows with
               flexibility and agility.
             </p>
           </div>
 
-          <div className="mt-16 grid grid-cols-12 gap-6 max-w-7xl mx-auto">
+          <div className="mt-16 grid grid-cols-12 gap-5 max-w-7xl mx-auto">
             {/* First Row */}
-            <div className="col-span-5 bg-white rounded-lg shadow-md p-6 flex flex-col items-start space-y-3">
+            <div className="col-span-5 bg-white rounded-lg shadow-md p-6 flex flex-col items-start space-y-1">
               <h3 className="text-lg font-semibold text-gray-900">
                 {features[0].title}
               </h3>
@@ -271,10 +271,10 @@ export function FeaturesSection() {
               <img
                 src={features[0].imgSrc}
                 alt={features[0].title}
-                className="w-full rounded pt-12"
+                className="w-full rounded pt-6"
               />
             </div>
-            <div className="col-span-2 bg-white rounded-lg shadow-md p-6 flex flex-col items-start space-y-4">
+            <div className="col-span-3 bg-white rounded-lg shadow-md p-6 flex flex-col items-start space-y-1">
               <h3 className="text-lg font-semibold text-gray-900">
                 {features[1].title}
               </h3>
@@ -282,10 +282,10 @@ export function FeaturesSection() {
               <img
                 src={features[1].imgSrc}
                 alt={features[1].title}
-                className="w-full rounded"
+                className="w-full rounded pt-6"
               />
             </div>
-            <div className="col-span-5 bg-white rounded-lg shadow-md p-6 flex flex-col items-start space-y-4">
+            <div className="col-span-4 bg-white rounded-lg shadow-md p-6 flex flex-col items-start space-y-1">
               <h3 className="text-lg font-semibold text-gray-900">
                 {features[2].title}
               </h3>
@@ -293,7 +293,7 @@ export function FeaturesSection() {
               <img
                 src={features[2].imgSrc}
                 alt={features[2].title}
-                className="w-full rounded"
+                className="w-full rounded pt-12"
               />
             </div>
 

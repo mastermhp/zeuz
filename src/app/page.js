@@ -1,3 +1,4 @@
+import BlogSection from "./components/BlogSection";
 import { CTASection } from "./components/CTASection";
 import { FeaturesSection } from "./components/FeaturesSection";
 import { Footer } from "./components/Footer";
@@ -8,7 +9,8 @@ import OrbitLogos from "./components/OrbitLogos";
 import { ServicesSection } from "./components/ServicesSection";
 import { SoftwareManagement } from "./components/SoftwareManagement";
 import SupportSection from "./components/SupportSection";
-import { TestimonialsSection } from "./components/TestimonialsSection";
+import TestimonialsSection from "./components/TestimonialsSection";
+// import { TestimonialsSection } from "./components/TestimonialsSection";
 
 export default function Home() {
   return (
@@ -22,6 +24,7 @@ export default function Home() {
       <SupportSection/>
       <ServicesSection />
       <TestimonialsSection />
+      <BlogSection/>
       <CTASection />
       <Footer />
     </main>
