@@ -5,35 +5,143 @@ export default function BrandsLogoScroll() {
     // Duplicate logos to create seamless scroll effect
     ...Array(2).fill([
       {
-        src: "/placeholder.svg?height=50&width=150",
+        src: "/l1.png?height=50&width=150",
         alt: "Construction Specialties logo",
         width: 150,
         height: 50
       },
       {
-        src: "/placeholder.svg?height=50&width=120",
+        src: "/l2).png?height=50&width=120",
         alt: "SuccessKPI logo",
         width: 120,
         height: 50
       },
       {
-        src: "/placeholder.svg?height=50&width=130",
+        src: "/l3.png?height=50&width=130",
         alt: "Onloop logo",
         width: 130,
         height: 50
       },
       {
-        src: "/placeholder.svg?height=50&width=140",
+        src: "/l4.png?height=50&width=140",
         alt: "EasyFinancial logo",
         width: 140,
         height: 50
       },
       {
-        src: "/placeholder.svg?height=50&width=110",
+        src: "/l5.png?height=50&width=110",
         alt: "TELUS logo",
         width: 110,
         height: 50
-      }
+      },
+      {
+        src: "/l6.png?height=50&width=110",
+        alt: "TELUS logo",
+        width: 110,
+        height: 50
+      },
+      {
+        src: "/l7.png?height=50&width=110",
+        alt: "TELUS logo",
+        width: 110,
+        height: 50
+      },
+      {
+        src: "/l8.png?height=50&width=110",
+        alt: "TELUS logo",
+        width: 110,
+        height: 50
+      },
+      {
+        src: "/l9.png?height=50&width=110",
+        alt: "TELUS logo",
+        width: 110,
+        height: 50
+      },
+      {
+        src: "/l10.png?height=50&width=110",
+        alt: "TELUS logo",
+        width: 110,
+        height: 50
+      },
+      {
+        src: "/l11.png?height=50&width=110",
+        alt: "TELUS logo",
+        width: 110,
+        height: 50
+      },
+      {
+        src: "/l12.png?height=50&width=110",
+        alt: "TELUS logo",
+        width: 110,
+        height: 50
+      },
+      {
+        src: "/l13.png?height=50&width=110",
+        alt: "TELUS logo",
+        width: 110,
+        height: 50
+      },
+      {
+        src: "/l14.png?height=50&width=110",
+        alt: "TELUS logo",
+        width: 110,
+        height: 50
+      },
+      {
+        src: "/l15.png?height=50&width=110",
+        alt: "TELUS logo",
+        width: 110,
+        height: 50
+      },
+      {
+        src: "/l16.png?height=50&width=110",
+        alt: "TELUS logo",
+        width: 110,
+        height: 50
+      },
+      {
+        src: "/l17.png?height=50&width=110",
+        alt: "TELUS logo",
+        width: 110,
+        height: 50
+      },
+      {
+        src: "/l18.png?height=50&width=110",
+        alt: "TELUS logo",
+        width: 110,
+        height: 50
+      },
+      {
+        src: "/l19.png?height=50&width=110",
+        alt: "TELUS logo",
+        width: 110,
+        height: 50
+      },
+      {
+        src: "/l20.png?height=50&width=110",
+        alt: "TELUS logo",
+        width: 110,
+        height: 50
+      },
+      {
+        src: "/l21.png?height=50&width=110",
+        alt: "TELUS logo",
+        width: 110,
+        height: 50
+      },
+      {
+        src: "/l22.png?height=50&width=110",
+        alt: "TELUS logo",
+        width: 110,
+        height: 50
+      },
+      {
+        src: "/l23.png?height=50&width=110",
+        alt: "TELUS logo",
+        width: 110,
+        height: 50
+      },
     ]).flat()
   ]
 
@@ -49,7 +157,7 @@ export default function BrandsLogoScroll() {
               {logos.map((logo, index) => (
                 <div
                   key={index}
-                  className="flex-shrink-0 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+                  className="flex-shrink-0 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 hover:cursor-pointer transition-all duration-300"
                 >
                   <Image
                     src={logo.src}

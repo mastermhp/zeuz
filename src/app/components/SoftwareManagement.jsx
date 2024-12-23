@@ -57,7 +57,7 @@ export function SoftwareManagement() {
         <div className="text-center">
           <Button 
             size="lg"
-            className="bg-pink-500 hover:bg-pink-600 text-white rounded-full"
+            className="bg-[#ED2C92] hover:bg-pink-600 text-white rounded-[8px]"
           >
             All Features →
           </Button>

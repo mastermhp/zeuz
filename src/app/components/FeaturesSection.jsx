@@ -7,127 +7,224 @@ import { Button } from "@/components/ui/button";
 import BrandsLogoScroll from "./BrandsLogoScroll";
 
 export function FeaturesSection() {
+  const features = [
+    {
+      title: "Test Management Coverage",
+      description:
+        "Create, assign, and track tasks with deadlines, priorities, and dependencies for effective project planning and execution.",
+      imgSrc: "/i1.png",
+    },
+    {
+      title: "Version Comparison",
+      description:
+        "Foster collaboration and communication among team members with chat.",
+      imgSrc: "/i2.png",
+    },
+    {
+      title: "Kanban View",
+      description:
+        "Monitor project performance metrics, track progress against goals, and generate project status reports for stakeholders.",
+      imgSrc: "/i3.png",
+    },
+    {
+      title: "Complete Project Management",
+      description:
+        "Allocate resources, manage workloads, and schedule tasks and milestones to optimize resource utilization and project timelines.",
+      imgSrc: "/i4.png",
+    },
+    {
+      title: "Integration with third-party tools",
+      description:
+        "Integrate with popular productivity tools such as G Suite, Jira, and Slack for seamless workflow integration.",
+      imgSrc: "/i5.png",
+    },
+    {
+      title: "All in One Platform",
+      description:
+        "Combine all your tools and workflows in one powerful platform.",
+      imgSrc: "/i6.png",
+    },
+  ];
+
   return (
     <div className="py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-      <div className="container mx-auto px-4 py-16">
-      {/* Main Content */}
-      <div className="grid lg:grid-cols-2 gap-12 items-start mb-20">
-        <div className="space-y-8">
-          {/* Headings */}
-          <div className="space-y-4">
-            <h2 className="text-purple-600 font-medium">Why ZeuZ is Unique</h2>
-            <h1 className="text-4xl font-bold leading-tight">
-              The game-changer in test automation.
-            </h1>
-          </div>
-          
-          {/* Description */}
-          <p className="text-gray-600 text-lg">
-            ZeuZ brings together deep industry insights and cutting-edge technology to deliver a test automation platform designed for the demands of today's software landscape.
-          </p>
+        <div className="container mx-auto px-4 py-16">
+          {/* Main Content */}
+          <div className="grid lg:grid-cols-2 gap-12 items-start mb-20">
+            <div className="space-y-8">
+              {/* Headings */}
+              <div className="space-y-4">
+                <h2 className="text-purple-500 font-medium">
+                  Why ZeuZ is Unique
+                </h2>
+                <h1 className="text-4xl font-bold leading-tight">
+                  The game-changer in test automation.
+                </h1>
+              </div>
 
-          {/* Features Grid */}
-          <div className="grid md:grid-cols-2 gap-x-8 gap-y-4">
-            <div className="space-y-4">
-              <div className="flex items-center gap-2">
-                <Check className="text-green-500" />
-                <span>AI-Driven Simplicity</span>
+              {/* Description */}
+              <p className="text-gray-600 text-lg">
+                ZeuZ brings together deep industry insights and cutting-edge
+                technology to deliver a test automation platform designed for
+                the demands of today's software landscape.
+              </p>
+
+              {/* Features Grid */}
+              <div className="grid md:grid-cols-2 gap-x-8 gap-y-4 ">
+                <div className="space-y-4 text-sm">
+                  <div className="flex items-center gap-2">
+                    <Check className="text-gray-600" />
+                    <span>AI-Driven Simplicity</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Check className="text-gray-600" />
+                    <span>Comprehensive Coverage</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Check className="text-gray-600" />
+                    <span>Adaptability and Scalability</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Check className="text-gray-600" />
+                    <span>Expert Professional Services</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Check className="text-gray-600" />
+                    <span>Seamless Integration</span>
+                  </div>
+                </div>
+                <div className="space-y-4 text-sm">
+                  <div className="flex items-center gap-2">
+                    <Check className="" />
+                    <span>Robust Security</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Check className="text-gray-600" />
+                    <span>User-Centric Innovation</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Check className="text-gray-600 " />
+                    <span>Cost Efficiency and ROI</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Check className="text-gray-600" />
+                    <span>All-in-One Powerhouse</span>
+                  </div>
+                </div>
               </div>
-              <div className="flex items-center gap-2">
-                <Check className="text-green-500" />
-                <span>Comprehensive Coverage</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Check className="text-green-500" />
-                <span>Adaptability and Scalability</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Check className="text-green-500" />
-                <span>Expert Professional Services</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Check className="text-green-500" />
-                <span>Seamless Integration</span>
-              </div>
+
+              {/* CTA Button */}
+              <Button
+                className="group px-6 py-3 border-2 border-[#FF29A4] text-[#FF29A4] "
+                style={{
+                  width: "169px",
+                  height: "51px",
+                }}
+                variant="outline"
+              >
+                Learn more
+                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+              </Button>
             </div>
-            <div className="space-y-4">
-              <div className="flex items-center gap-2">
-                <Check className="text-green-500" />
-                <span>Robust Security</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Check className="text-green-500" />
-                <span>User-Centric Innovation</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Check className="text-green-500" />
-                <span>Cost Efficiency and ROI</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Check className="text-green-500" />
-                <span>All-in-One Powerhouse</span>
-              </div>
+
+            {/* Platform Interface Image */}
+            <div className="relative top-28">
+              <Image
+                src="/Container.png"
+                alt="ZeuZ Platform Interface"
+                width={600}
+                height={400}
+                className=""
+              />
             </div>
           </div>
 
-          {/* CTA Button */}
-          <Button className="group" variant="outline">
-            Learn more
-            <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-          </Button>
+          {/* Trusted Brands */}
+          <BrandsLogoScroll />
         </div>
-
-        {/* Platform Interface Image */}
-        <div className="relative">
-          <Image
-            src="/placeholder.svg"
-            alt="ZeuZ Platform Interface"
-            width={600}
-            height={400}
-            className="rounded-lg shadow-xl"
-          />
-        </div>
-      </div>
-
-      {/* Trusted Brands */}
-      <BrandsLogoScroll />
-    </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12">
-          <div className="relative bg-gradient-to-r from-purple-600 to-purple-500 rounded-3xl overflow-hidden">
+          <div className="relative bg-gradient-to-l from-[#944BFF] to-[#4D189C] rounded-[32px] overflow-visible">
+            <div
+              className="absolute"
+              style={{
+                width: "404px",
+                height: "46px",
+                top: "335.03px",
+                left: "698px",
+                opacity: "0.82",
+                background:
+                  "radial-gradient(50% 50% at 50% 50%, #000000 0%, #276484 100%)",
+                filter: "blur(17px)",
+                borderRadius: "50%",
+              }}
+            />
+
             <div className="grid lg:grid-cols-2 gap-8 items-center p-8 lg:p-12">
               {/* Content */}
-              <div className="text-white space-y-6">
+              <div className="text-white space-y-8">
                 <h2 className="text-3xl lg:text-4xl font-bold leading-tight">
                   ZeuZ AI: Intelligent
                   <br />
                   Test Optimization
                 </h2>
 
-                <ul className="space-y-4">
-                  <ListItem>
-                    Leverage AI to prioritize, generate, and execute test cases
-                  </ListItem>
-                  <ListItem>Significantly reduce testing time</ListItem>
-                  <ListItem>Enhancing coverage and accuracy</ListItem>
+                <ul className="space-y-6">
+                  {[
+                    "Leverage AI to prioritize, generate, and execute test cases",
+                    "Significantly reduce testing time",
+                    "Enhancing coverage and accuracy",
+                  ].map((item, index) => (
+                    <li key={index} className="flex items-center gap-3">
+                      <svg
+                        className="w-5 h-5 text-white/90"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M20 6L9 17L4 12"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                      <span className="text-md text-white/90">{item}</span>
+                    </li>
+                  ))}
                 </ul>
 
-                <Button className="bg-pink-500 hover:bg-pink-600 text-white rounded-full mt-4">
+                <Button
+                  style={{
+                    width: "169px",
+                    height: "51px",
+                    // top: '335.03px',
+                    // left: '698px',
+                    // opacity: '0.82',
+                    background: "#ED2C92",
+                    // filter: 'blur(17px)',
+                    // borderRadius: '50%'
+                  }}
+                  className=" hover:bg-pink-600 text-white rounded-[8px] px-6 py-3 text-lg"
+                >
                   Learn more →
                 </Button>
               </div>
 
               {/* Robot Image */}
               <div className="relative flex justify-end">
-                <Image
-                  src="/placeholder.svg"
-                  alt="AI Robot Assistant"
-                  width={400}
-                  height={400}
-                  className="w-auto h-auto max-w-[80%] lg:max-w-[90%] drop-shadow-2xl"
-                  priority
-                />
+                <div className="absolute -top-96 right-0 w-[580px]">
+                  <Image
+                    src="/robo.png"
+                    alt="AI Robot Assistant"
+                    width={580}
+                    height={560}
+                    className="w-full h-auto drop-shadow-2xl"
+                    priority
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -152,89 +249,102 @@ export function FeaturesSection() {
           </div>
         </div> */}
 
-        <section className="py-24 bg-gradient-to-br from-purple-50/30 to-transparent">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6">
-            {/* Header */}
-            <div className="text-center mb-20">
-              <h2 className="text-[32px] font-bold text-gray-900 mb-4">
-                We Solve Challenges & Complexity in Modern Testing
-              </h2>
-              <p className="text-gray-600 max-w-3xl mx-auto text-lg">
-                ZeuZ provides innovative solutions that use Machine Learning and
-                Artificial Intelligence to streamline complex workflows with
-                flexibility and agility.
-              </p>
-            </div>
+        <div className="bg-gradient-to-b from-purple-50 to-white py-16 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto text-center">
+            <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+              We Solve Challenges & Complexity in Modern Testing
+            </h2>
+            <p className="mt-4 text-lg text-gray-600">
+              ZeuZ provides innovative solutions that use Machine Learning and
+              Artificial Intelligence to streamline complex workflows with
+              flexibility and agility.
+            </p>
+          </div>
 
-            {/* Top Features Grid */}
-            <div className="grid md:grid-cols-3 gap-8 mb-16">
-              <FeatureCard
-                title="Test Management Coverage"
-                description="Create, assign, and track tasks with deadlines, priorities, and dependencies for effective project planning and execution."
-                imageSrc="/placeholder.svg"
-              />
-              <FeatureCard
-                title="Version Comparison"
-                description="Foster collaboration and communication among team members with chat."
-                imageSrc="/placeholder.svg"
-              />
-              <FeatureCard
-                title="Kanban View"
-                description="Monitor project performance metrics, track progress against goals, and generate project status reports for stakeholders."
-                imageSrc="/placeholder.svg"
+          <div className="mt-16 grid grid-cols-12 gap-6 max-w-7xl mx-auto">
+            {/* First Row */}
+            <div className="col-span-5 bg-white rounded-lg shadow-md p-6 flex flex-col items-start space-y-3">
+              <h3 className="text-lg font-semibold text-gray-900">
+                {features[0].title}
+              </h3>
+              <p className="text-gray-600">{features[0].description}</p>
+              <img
+                src={features[0].imgSrc}
+                alt={features[0].title}
+                className="w-full rounded pt-12"
               />
             </div>
+            <div className="col-span-2 bg-white rounded-lg shadow-md p-6 flex flex-col items-start space-y-4">
+              <h3 className="text-lg font-semibold text-gray-900">
+                {features[1].title}
+              </h3>
+              <p className="text-gray-600">{features[1].description}</p>
+              <img
+                src={features[1].imgSrc}
+                alt={features[1].title}
+                className="w-full rounded"
+              />
+            </div>
+            <div className="col-span-5 bg-white rounded-lg shadow-md p-6 flex flex-col items-start space-y-4">
+              <h3 className="text-lg font-semibold text-gray-900">
+                {features[2].title}
+              </h3>
+              <p className="text-gray-600">{features[2].description}</p>
+              <img
+                src={features[2].imgSrc}
+                alt={features[2].title}
+                className="w-full rounded"
+              />
+            </div>
 
-            {/* Bottom Features Grid */}
-            <div className="grid md:grid-cols-2 gap-8 mb-16">
-              <div className="space-y-8">
-                <BottomFeatureCard
-                  title="Complete Project Management"
-                  description="Allocate resources, manage workloads, and schedule tasks and milestones to optimize resource utilization and project timelines."
-                  imageSrc="/placeholder.svg"
+            {/* Second Row */}
+            <div className="col-span-6 bg-white rounded-lg shadow-md p-6 flex flex-col items-start">
+              <h3 className="text-lg font-semibold text-gray-900">
+                {features[3].title}
+              </h3>
+              <p className="text-gray-600">{features[3].description}</p>
+              <img
+                src={features[3].imgSrc}
+                alt={features[3].title}
+                className="w-full rounded"
+              />
+            </div>
+            <div className="col-span-6">
+              <div className="mb-2 bg-white rounded-lg shadow-md gap-1 p-3 flex flex-col items-start">
+                <h3 className="text-md font-semibold text-gray-900">
+                  {features[4].title}
+                </h3>
+                <p className="text-xs text-gray-600">
+                  {features[4].description}
+                </p>
+                <img
+                  src={features[4].imgSrc}
+                  alt={features[4].title}
+                  className="w-full rounded"
                 />
               </div>
-              <div className="space-y-8">
-                <BottomFeatureCard
-                  title="Integration with third-party tools"
-                  description="Integrate with popular productivity tools and services such as G Suite, Jira, and Slack for seamless workflow integration."
-                  imageSrc="/placeholder.svg"
-                  imageClassName="h-[200px] object-contain"
-                />
-                <div>
-                  <h3 className="font-medium text-[18px] mb-4">
-                    All in One Platform
-                  </h3>
-                  <div className="bg-white rounded-xl p-6">
-                    <div className="grid grid-cols-5 gap-4">
-                      {Array.from({ length: 15 }).map((_, i) => (
-                        <div
-                          key={i}
-                          className="flex items-center justify-center"
-                        >
-                          <Image
-                            src="/placeholder.svg"
-                            alt={`Platform ${i + 1}`}
-                            width={24}
-                            height={24}
-                            className="w-6 h-6"
-                          />
-                        </div>
-                      ))}
-                    </div>
+              <div className="bg-white rounded-lg shadow-md pt-3 pl-3 pr-0 flex flex-col">
+                <div className="flex justify-center gap-20">
+                  <div className="flex justify-center items-center ">
+                    <h3 className="text-md ml-4 text-center font-semibold text-gray-900">
+                      {features[5].title}
+                    </h3>
                   </div>
+                    <div className=""><img
+                      src={features[5].imgSrc}
+                      alt={features[5].title}
+                      className="w-full rounded"
+                    /></div>
                 </div>
+                {/* <div className="row-span-2">
+                  <h3 className="text-md font-semibold text-gray-900">
+                    {features[5].title}
+                  </h3>
+                </div> */}
               </div>
-            </div>
-
-            {/* CTA Button */}
-            <div className="text-center">
-              <Button className="bg-pink-500 hover:bg-pink-600 text-white rounded-full px-8 py-2.5">
-                Learn more →
-              </Button>
             </div>
           </div>
-        </section>
+        </div>
       </div>
     </div>
   );

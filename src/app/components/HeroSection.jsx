@@ -98,37 +98,17 @@ import {
   BarChart3,
   Play,
 } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
+import { AnimatedBadge } from "./AnimatedBadge";
 
 export function HeroSection() {
   return (
-    <div className="w-full pt-24 pb-16 bg-gradient-to-br from-purple-100 to-pink-100">
+    <div className="w-full pt-24 pb-16 bg-[#F2EAFF]">
       <div className="relative container mx-auto px-4">
         {/* Left Badge */}
         <div className="absolute mt-40 mx-14">
-          <div className="inline-flex items-center rounded-full bg-pink-50 px-4 py-3">
-            <div className="mr-2 rounded-full bg-pink-200 p-1">
-              <svg
-                className="h-4 w-4 text-pink-500"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M13 10V3L4 14h7v7l9-11h-7z"
-                />
-              </svg>
-            </div>
-            <span className="text-sm font-bold text-gray-600">
-              Seamlessly integrated
-              <span className="block -mt-1 text-xs text-gray-400">
-                with all platform
-              </span>
-            </span>
-          </div>
+        <AnimatedBadge/>
         </div>
 
         {/* Main Heading */}
@@ -167,16 +147,16 @@ export function HeroSection() {
         </div>
 
         {/* CTA Buttons */}
-        <div className="flex justify-center gap-4 mb-16">
+        <div className="flex justify-center gap-4 mb-16 drop-shadow-2xl">
           <Link
             href="#"
-            className="inline-flex items-center px-6 py-3 rounded-full bg-gradient-to-r from-pink-500 to-purple-500 text-white font-medium hover:opacity-90 transition-opacity"
+            className="inline-flex items-center px-6 py-3 rounded-[8px] bg-[#ED2C92] text-white font-medium hover:opacity-90 transition-opacity"
           >
             Request Free Demo →
           </Link>
           <Link
             href="#"
-            className="inline-flex items-center px-6 py-3 rounded-full border-2 border-pink-500 text-pink-500 font-medium hover:bg-pink-50 transition-colors"
+            className="inline-flex items-center px-6 py-3 rounded-[8px] border-2 border-[#ED2C92] text-[#ED2C92] font-medium hover:bg-pink-50 transition-colors"
           >
             <Play className="w-4 h-4 mr-2" />
             Watch video
@@ -188,7 +168,7 @@ export function HeroSection() {
           <div class="relative p-[2px] rounded-full bg-gradient-to-r from-white to-teal-300">
             <div className="inline-flex items-center rounded-full bg-gradient-to-r from-teal-300 to-white px-4 py-4">
               <div className="mr-1 rounded-full bg-white p-2">
-                <svg
+                {/* <svg
                   className="h-4 w-4 text-teal-500"
                   viewBox="0 0 24 24"
                   fill="none"
@@ -200,7 +180,12 @@ export function HeroSection() {
                     strokeWidth={2}
                     d="M5 13l4 4L19 7"
                   />
-                </svg>
+                </svg> */}
+                <Image
+                src='/sparkles.png'
+                width={32}
+                height={32}
+                />
               </div>
               <span className="text-sm font-bold text-gray-600">
                 Write tests quickly

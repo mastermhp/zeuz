@@ -13,7 +13,7 @@ export function NavBar() {
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
               <Image
-                src="/placeholder.svg"
+                src="/lg.png"
                 alt="ZeuZ Logo"
                 width={120}
                 height={40}
@@ -32,7 +32,7 @@ export function NavBar() {
             </Link>
           </div>
 
-          <Button className="bg-pink-500 hover:bg-pink-600 text-white rounded-full">
+          <Button className="bg-inherit border-2 border-[#ED2C92] hover:bg-pink-600 text-[#ED2C92] rounded-[8px]">
             Request Free Demo
           </Button>
         </div>
