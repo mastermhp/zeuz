@@ -10,6 +10,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
+import Link from "next/link";
 
 const testimonials = [
   {
@@ -135,11 +136,27 @@ export default function TestimonialsSection() {
           <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2" />
         </Carousel>
 
-        <div className="text-center mt-8">
-          <Button variant="secondary" className="bg-[#ED2C92] text-white rounded-[8px]">
-            See all testimonials
-            <ArrowRight className="w-4 h-4" />
-          </Button>
+        <div className="flex justify-center text-center mt-8">
+          <Link
+            href=""
+            style={{
+              width: "169px",
+              height: "51px",
+              // top: '335.03px',
+              // left: '698px',
+              // opacity: '0.82',
+              background: "#ED2C92",
+              // filter: 'blur(17px)',
+              // borderRadius: '50%'
+            }}
+            variant="secondary"
+            className="flex justify-center items-center bg-[#ED2C92] hover:border-[#3a1d67] text-white rounded-[8px]"
+          >
+            <span className="flex justify-center items-center">
+              See all testimonials
+              <ArrowRight className="w-4 h-7" />
+            </span>
+          </Link>
         </div>
       </div>
     </section>

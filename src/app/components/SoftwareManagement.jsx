@@ -1,8 +1,9 @@
-'use client'
+"use client";
 
-import { Button } from "@/components/ui/button"
-import { Bot, Settings, FileText, Boxes, Clock, Users } from 'lucide-react'
-import PropTypes from 'prop-types'
+import { Button } from "@/components/ui/button";
+import { Bot, Settings, FileText, Boxes, Clock, Users } from "lucide-react";
+import Link from "next/link";
+import PropTypes from "prop-types";
 
 export function SoftwareManagement() {
   return (
@@ -54,22 +55,34 @@ export function SoftwareManagement() {
           />
         </div>
 
-        <div className="text-center">
-          <Button 
+        <div className="flex justify-center">
+          <Link
+            style={{
+              width: "169px",
+              height: "51px",
+              background: "#ED2C92",
+            }}
+            href=""
             size="lg"
-            className="bg-[#ED2C92] hover:bg-pink-600 text-white rounded-[8px]"
+            className="bg-[#ED2C92] p-3 hover:border-[#3a1d67] text-white rounded-[8px]"
           >
-            All Features →
-          </Button>
+            <span>All Features →</span>
+          </Link>
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-function FeatureCard({ icon, title, description, variant = 'default', highlight = false }) {
+function FeatureCard({
+  icon,
+  title,
+  description,
+  variant = "default",
+  highlight = false,
+}) {
   return (
-    <div 
+    <div
       className={`
         group relative p-6 rounded-xl transition-all duration-300 ease-in-out bg-pink-50 hover:from-purple-900 hover:to-purple-900
         hover:shadow-xl hover:scale-105
@@ -78,44 +91,53 @@ function FeatureCard({ icon, title, description, variant = 'default', highlight 
         hover:cursor-pointer
       `}
     >
-      <div className={`
+      <div
+        className={`
         mb-4 inline-flex p-2 rounded-lg
-        ${highlight ? 'bg-pink-50 text-pink-500' : 
-          variant === 'purple' ? 'bg-purple-800 text-white' : 
-          'bg-gray-100 text-gray-600'}
+        ${
+          highlight
+            ? "bg-pink-50 text-pink-500"
+            : variant === "purple"
+            ? "bg-purple-800 text-white"
+            : "bg-gray-100 text-gray-600"
+        }
         group-hover:bg-white/20 group-hover:text-white
         transition-colors duration-300
-      `}>
+      `}
+      >
         {icon}
       </div>
-      <h3 className={`
+      <h3
+        className={`
         text-lg font-semibold mb-2
-        ${variant === 'purple' ? 'text-white' : 'text-gray-800'}
+        ${variant === "purple" ? "text-white" : "text-gray-800"}
         group-hover:text-white
-      `}>
+      `}
+      >
         {title}
       </h3>
-      <p className={`
+      <p
+        className={`
         text-sm leading-relaxed
-        ${variant === 'purple' ? 'text-purple-100' : 'text-gray-600'}
+        ${variant === "purple" ? "text-purple-100" : "text-gray-600"}
         group-hover:text-white/90
-      `}>
+      `}
+      >
         {description}
       </p>
     </div>
-  )
+  );
 }
 
 FeatureCard.propTypes = {
   icon: PropTypes.node.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  variant: PropTypes.oneOf(['default', 'purple']),
-  highlight: PropTypes.bool
-}
+  variant: PropTypes.oneOf(["default", "purple"]),
+  highlight: PropTypes.bool,
+};
 
 FeatureCard.defaultProps = {
-  variant: 'default',
-  highlight: false
-}
-
+  variant: "default",
+  highlight: false,
+};

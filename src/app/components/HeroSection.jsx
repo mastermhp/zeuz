@@ -107,14 +107,14 @@ export function HeroSection() {
     <div className="w-full pt-24 pb-16 bg-[#F2EAFF]">
       <div className="relative container mx-auto px-4">
         {/* Left Badge */}
-        <div className="absolute mt-40 mx-14">
+        <div style={{transition: 'all .35s'}} className="absolute top-40 mx-14 hover:top-[150px]">
           <AnimatedBadge />
         </div>
 
         {/* Main Heading */}
         <div className="text-center mb-12">
           <h1 className="text-6xl font-bold mb-4">
-            <span className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[#7723b7] to-pink-500 bg-clip-text text-transparent">
               AI-Powered
             </span>
           </h1>
@@ -152,26 +152,24 @@ export function HeroSection() {
             href="#"
             className="inline-flex items-center px-6 py-3 rounded-[8px] bg-[#ED2C92] text-white font-medium hover:opacity-90 transition-opacity"
           >
-            Request Free Demo →
+            <span>Request Free Demo →</span>
           </Link>
           <Link
             href="#"
-            className="inline-flex items-center px-6 py-3 rounded-[8px] border-2 border-[#ED2C92] text-[#ED2C92] font-medium hover:bg-pink-50 transition-colors"
+            className="inline-flex items-center px-6 py-3 rounded-[8px] border-2 border-[#ED2C92] text-[#ED2C92] font-medium hover:text-white hover:border-[#7723b7] transition-colors"
           >
-            <Play className="w-4 h-4 mr-2" />
-            Watch video
+            <span className="flex">
+              Watch video
+              <Play className="w-4 h-6 ml-2" />
+            </span>
           </Link>
         </div>
 
         {/* Right Badge */}
-        <div className="absolute top-80 right-10 mx-14">
+        <div style={{transition: 'all .35s'}} className="absolute top-80 right-10 mx-14 hover:top-[310px] translate-y-6">
           <div className="flex items-center gap-3 w-fit px-3 py-[12px] pr-8 rounded-full bg-gradient-to-r from-[#ABEAEA] to-[#FFFFFF] border border-[#ABEAEA] backdrop-blur-[195px]">
             <div className="bg-white rounded-full p-2 w-10 h-10 flex items-center justify-center">
-            <Image
-                src='/sparkles.png'
-                width={32}
-                height={32}
-                />
+              <Image src="/sparkles.png" width={32} height={32} />
               {/* <Sparkles className="w-6 h-6 text-[#ABEAEA]" /> */}
             </div>
             <div className="flex flex-col">

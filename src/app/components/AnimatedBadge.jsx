@@ -48,6 +48,7 @@ export function AnimatedBadge() {
         borderRadius: "522.71px",
         backdropFilter: "blur(167.88px)",
         WebkitBackdropFilter: "blur(167.88px)",
+        transition: 'all .35s'
       }}
     >
       {/* Border gradient using pseudo-element */}

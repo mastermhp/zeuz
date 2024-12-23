@@ -18,6 +18,7 @@
 // }
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export function CTASection() {
   return (
@@ -42,10 +43,15 @@ export function CTASection() {
           <h2 className="text-3xl md:text-4xl font-bold text-white max-w-xl">
             Take Advantage of our FREE Demo Today.
           </h2>
-          <button className="bg-white text-black px-6 py-3 rounded-lg flex items-center gap-2 hover:bg-gray-100 transition-colors">
-            Request Free Demo
-            <ArrowRight className="w-5 h-5" />
-          </button>
+          <Link
+            href=""
+            className="bg-white text-black px-6 py-3 rounded-lg flex items-center gap-2 hover:bg-gray-100 transition-colors"
+          >
+            <span className="flex items-center">
+              Request Free Demo
+              <ArrowRight className="w-5 h-5" />
+            </span>
+          </Link>
         </div>
       </div>
     </div>

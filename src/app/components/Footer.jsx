@@ -43,7 +43,7 @@ export function Footer() {
             </p>
             <div className="text-gray-600">info@zeuz.ai</div>
             <div className="flex gap-4">
-              <Link href="#" className="text-gray-600 hover:text-gray-900">
+              <Link href="#" className="text-gray-600 hover:text-gray-900 pointer-events-none">
                 <Facebook className="w-5 h-5" />
               </Link>
               <Link href="#" className="text-gray-600 hover:text-gray-900">
@@ -64,7 +64,7 @@ export function Footer() {
             <ul className="space-y-3">
               {productLinks.map((link) => (
                 <li key={link.title}>
-                  <Link href={link.href} className="text-gray-600 hover:text-gray-900 text-sm">
+                  <Link href={link.href} className="text-gray-600 hover:text-gray-900 text-sm pointer-events-none">
                     {link.title}
                   </Link>
                 </li>
@@ -78,7 +78,7 @@ export function Footer() {
             <ul className="space-y-3">
               {companyLinks.map((link) => (
                 <li key={link.title}>
-                  <Link href={link.href} className="text-gray-600 hover:text-gray-900 text-sm">
+                  <Link href={link.href} className="text-gray-600 hover:text-gray-900 text-sm pointer-events-none">
                     {link.title}
                   </Link>
                 </li>
@@ -92,7 +92,7 @@ export function Footer() {
             <ul className="space-y-3">
               {resourceLinks.map((link) => (
                 <li key={link.title}>
-                  <Link href={link.href} className="text-gray-600 hover:text-gray-900 text-sm">
+                  <Link href={link.href} className="text-gray-600 hover:text-gray-900 text-sm pointer-events-none">
                     {link.title}
                   </Link>
                 </li>
@@ -104,7 +104,7 @@ export function Footer() {
           <div className="sm:col-span-2 lg:col-span-3">
             <div className="space-y-4">
               <p className="text-gray-600 text-sm">
-                Subscribe to our newsletter and receive a selection of cool articles every weeks.
+                Subscribe to our newsletter and receive a selection of cool articles.
               </p>
               <div className="relative">
                 <input
@@ -128,10 +128,10 @@ export function Footer() {
               © 2025, All Rights Reserved
             </div>
             <div className="flex gap-6">
-              <Link href="#" className="text-gray-600 hover:text-gray-900 text-sm">
+              <Link href="#" className="text-gray-600 hover:text-gray-900 text-sm pointer-events-none">
                 Terms of use
               </Link>
-              <Link href="#" className="text-gray-600 hover:text-gray-900 text-sm">
+              <Link href="#" className="text-gray-600 hover:text-gray-900 text-sm pointer-events-none">
                 Privacy policy
               </Link>
             </div>

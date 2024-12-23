@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export function ServicesSection() {
   const services = [
@@ -63,10 +64,12 @@ export function ServicesSection() {
         </div>
 
         <div className="text-center mt-12">
-          <Button className="bg-[#ED2C92] hover:bg-[#ED2C92]/90 text-white rounded-md px-6 py-2.5 inline-flex items-center gap-2 text-sm font-medium">
+          <Link href="" className="bg-[#ED2C92] hover:border-[#3a1d67] text-white rounded-md px-6 py-2.5 inline-flex items-center gap-2 text-sm font-medium">
+            <span className="flex items-center justify-center">
             Learn more
             <ArrowRight className="w-4 h-4" />
-          </Button>
+            </span>
+          </Link>
         </div>
       </div>
     </div>

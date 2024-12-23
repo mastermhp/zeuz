@@ -11,7 +11,7 @@ export function NavBar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
-            <Link href="/" className="flex items-center">
+            <Link href="/" className="flex items-center pointer-events-none">
               <Image
                 src="/lg.png"
                 alt="ZeuZ Logo"
@@ -32,9 +32,9 @@ export function NavBar() {
             </Link>
           </div>
 
-          <Button className="bg-inherit border-2 border-[#ED2C92] hover:bg-pink-600 text-[#ED2C92] rounded-[8px]">
-            Request Free Demo
-          </Button>
+          <Link href="" className="bg-inherit border-2 px-4 py-2 text-sm border-[#ED2C92] hover:bg-[#7723b7] hover:border-[#7723b7] text-[#ED2C92] rounded-[8px]">
+            <span>Request Free Demo</span>
+          </Link>
         </div>
       </div>
     </nav>

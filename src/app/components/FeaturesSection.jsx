@@ -5,6 +5,7 @@ import { ArrowRight, Check } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import BrandsLogoScroll from "./BrandsLogoScroll";
+import Link from "next/link";
 
 export function FeaturesSection() {
   const features = [
@@ -115,17 +116,19 @@ export function FeaturesSection() {
               </div>
 
               {/* CTA Button */}
-              <Button
-                className="group px-6 py-3 border-2 border-[#FF29A4] text-[#FF29A4] "
+              <Link
+                href=""
+                className="group px-6 py-3 border-2 border-[#FF29A4] text-[#FF29A4] hover:border-[#7723b7] rounded-[8px]"
                 style={{
                   width: "169px",
                   height: "51px",
                 }}
-                variant="outline"
               >
-                Learn more
-                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </Button>
+                <span className="flex justify-center">
+                  Learn more
+                  <ArrowRight className="ml-2 h-7 w-4 transition-transform group-hover:translate-x-1" />
+                </span>
+              </Link>
             </div>
 
             {/* Platform Interface Image */}
@@ -196,7 +199,8 @@ export function FeaturesSection() {
                   ))}
                 </ul>
 
-                <Button
+                <Link
+                  href=""
                   style={{
                     width: "169px",
                     height: "51px",
@@ -207,10 +211,10 @@ export function FeaturesSection() {
                     // filter: 'blur(17px)',
                     // borderRadius: '50%'
                   }}
-                  className=" hover:bg-pink-600 text-white rounded-[8px] px-6 py-3 text-lg"
+                  className=" hover:border-[#3a1d67] text-white rounded-[8px] px-6 py-3 text-lg"
                 >
-                  Learn more →
-                </Button>
+                  <span>Learn more →</span>
+                </Link>
               </div>
 
               {/* Robot Image */}
@@ -330,11 +334,13 @@ export function FeaturesSection() {
                       {features[5].title}
                     </h3>
                   </div>
-                    <div className=""><img
+                  <div className="">
+                    <img
                       src={features[5].imgSrc}
                       alt={features[5].title}
                       className="w-full rounded"
-                    /></div>
+                    />
+                  </div>
                 </div>
                 {/* <div className="row-span-2">
                   <h3 className="text-md font-semibold text-gray-900">
@@ -343,6 +349,25 @@ export function FeaturesSection() {
                 </div> */}
               </div>
             </div>
+          </div>
+
+          <div className="flex justify-center mt-6">
+            <Link
+              href=""
+              style={{
+                width: "169px",
+                height: "51px",
+                // top: '335.03px',
+                // left: '698px',
+                // opacity: '0.82',
+                background: "#ED2C92",
+                // filter: 'blur(17px)',
+                // borderRadius: '50%'
+              }}
+              className="flex justify-center hover:border-[#3a1d67] text-white rounded-[8px] mt-6 px-6 py-3 text-lg"
+            >
+              <span>Learn more →</span>
+            </Link>
           </div>
         </div>
       </div>

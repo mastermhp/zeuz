@@ -1,6 +1,7 @@
 import { Clock, Users, BookOpen, RefreshCw, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function SupportSection() {
   return (
@@ -20,10 +21,25 @@ export default function SupportSection() {
               from different tiers of support, each with customized pricing
               plans to best fit their specific requirements.
             </p>
-            <Button className="bg-[#ED2C92] hover:bg-[#D81B60] text-white rounded-[8px] p-6 inline-flex items-center gap-2 transition-all">
-              Learn more
-              <ArrowRight className="w-5 h-5" />
-            </Button>
+            <Link
+              href=""
+              style={{
+                width: "169px",
+                height: "51px",
+                // top: '335.03px',
+                // left: '698px',
+                // opacity: '0.82',
+                background: "#ED2C92",
+                // filter: 'blur(17px)',
+                // borderRadius: '50%'
+              }}
+              className="flex items-center justify-center bg-[#ED2C92] hover:border-[#3a1d67] text-white rounded-[8px] p-6 gap-2 transition-all"
+            >
+              <span className="flex items-center justify-center">
+                Learn more
+                <ArrowRight className="w-5 h-6" />
+              </span>
+            </Link>
           </div>
 
           <div className="grid gap-6 ">
@@ -85,7 +101,7 @@ export default function SupportSection() {
               </div>
             </div>
             <div className="flex ml-28 w-[391px] h-[77px] gap-6 px-6 bg-white rounded-lg shadow-md hover:shadow-md transition-shadow">
-            <div className="">
+              <div className="">
                 <img
                   src="/ckb.gif"
                   alt="Animated GIF"
@@ -106,7 +122,7 @@ export default function SupportSection() {
               </div>
             </div>
             <div className="flex w-[391px] h-[77px] gap-6 px-6 bg-white rounded-lg shadow-md hover:shadow-md transition-shadow">
-            <div className="">
+              <div className="">
                 <img
                   src="/upd.gif"
                   alt="Animated GIF"
